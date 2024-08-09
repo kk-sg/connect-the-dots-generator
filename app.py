@@ -75,7 +75,7 @@ def main():
     
     # Load and display the image
     image = Image.open('./images/dino.jpg')
-    st.image(image, caption='Complete the cuteness')
+    st.image(image, caption="Complete the cuteness. Psst... please note that this project is still a work in progress. Currently, the dots in the generated images are not sequenced properly. We're working on improving this feature to make your connect-the-dots experience even more enjoyable!")
     
     st.markdown("""
     Imagine conjuring a parade of delightful dot puzzles with a wave of your digital wand! That's exactly what you can do here! Our app harnesses the magic of AI to whip up custom connect-the-dots pages quicker than you can sharpen your favorite pencil!
