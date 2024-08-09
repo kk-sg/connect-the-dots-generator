@@ -142,7 +142,7 @@ def main():
 
             progress_bar = st.progress(0)
             for i in range(num_images):
-                generate_image_prompt = f"""Generate a simple one-liner prompt suitable for very young children's connect-the-dots image. The image is to be only a single object in a simple, black and white line art style. The single object theme is '{st.session_state.selected_theme}': {one_liner_theme_prompt}. 
+                generate_image_prompt = f"""Generate a simple one-liner prompt suitable for very young children's connect-the-dots image. The image is to be only a single object in a simple, black and white line art style. The single object theme is '{st.session_state.selected_theme}'. 
                 Ensure the design has clear lines and very simple shapes that will look good when scaled up for printing on A4 paper. Avoid intricate details that may be lost when printed."""
 
                 image_url = generate_image(client, generate_image_prompt)
