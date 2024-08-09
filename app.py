@@ -66,7 +66,7 @@ def create_zip_file(folder_name):
 
 
 def main():
-    st.title("🪄 AI Coloring Book Generator 🖍️")
+    st.title("🪄 AI Connect-the-Dots Generator 🖍️")
 
     st.markdown("""
     Step into the realm of dotted delights! This Streamlit app is your enchanted portal to crafting charming connect-the-dots puzzles that will captivate youngsters (and let's face it, grown-ups too) with pure joy!
@@ -142,9 +142,9 @@ def main():
 
             progress_bar = st.progress(0)
             for i in range(num_images):
-                generate_image_prompt = f"""Generate a simple one-liner prompt suitable for a children's connect-the-dots image. The image is to be only a single object in a simple, black and white line art style. The single object is based on the theme: 
-                The theme is '{st.session_state.selected_theme}': {one_liner_theme_prompt}. 
-                Ensure the design has clear, bold lines and simple shapes that will look good when scaled up for printing on A4 paper. 
+                generate_image_prompt = f"""Generate a simple one-liner prompt suitable for a children's connect-the-dots image. The image is to be only a single object in a simple, black and white line art style. 
+                The single object theme is '{st.session_state.selected_theme}': {one_liner_theme_prompt}. 
+                Ensure the design has clear lines and very simple shapes that will look good when scaled up for printing on A4 paper. 
                 Avoid intricate details that may be lost when printed."""
 
                 image_url = generate_image(client, generate_image_prompt)
