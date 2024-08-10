@@ -15,6 +15,13 @@ Imagine conjuring a parade of delightful dot puzzles with a wave of your digital
 - 💾 Save your dot-tastic creations in a neat zip package
 - 🌞 Ideal for lazy Sundays, festive gatherings, or whenever you crave a sprinkle of dot-driven delight
 
+## 🏃‍♂️ Getting Started
+### Prerequisites
+
+- Python 3.8+
+- Streamlit
+- OpenAI API key (see below for instructions)
+
 ## 🏃‍♂️ How to Run
 
 ### Option 1: Use Our Streamlit Page (No Code Required!)
@@ -30,11 +37,25 @@ Imagine conjuring a parade of delightful dot puzzles with a wave of your digital
 
 ## 🔑 Getting Your OpenAI API Key
 
-[The API key section remains the same as in the original README]
+Before you can start generating cute images, you'll need an OpenAI API key. Here's how to get one:
+
+1. Visit [OpenAI's website](https://platform.openai.com/)
+2. Sign up or log in: If you don't have an account, click "Sign up" and create one. If you already have an account, click "Log in".
+3. Navigate to API keys: Once logged in, look for your account name or icon in the top-right corner of the page. Click on it to open a dropdown menu.
+4. Select "Your Profile".
+5. Select "User API keys".
+6. Create a new API key: Look for a button that says "Create new secret key" or "+ New secret key".
+7. Name your key (optional): You may have the option to give your API key a name.
+8. Copy and save your API key: After creating the key, you'll see it displayed once. **Make sure to copy it immediately and store it securely, as you won't be able to see it again.**
+9. Set up billing: Before you can use your API key, you need to set up billing. Look for a "Billing" or "Payment" section in the account settings or main menu.
+10. Set usage limits (optional): In the billing section, you may be able to set usage limits to control your spending.
+
 
 ## 🎨 Using Your API Key on Streamlit
 
-[This section remains the same as in the original README]
+1. When you open our Streamlit app, you'll see a text box asking for your API key
+2. Paste your API key into this box (don't worry, we won't peek!)
+3. Click "Enter" and voila! You're ready to generate some cuteness!
 
 ## 🎨 A Parade of Themes
 
