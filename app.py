@@ -53,18 +53,6 @@ def generate_themes(client) -> list[str]:
             return []
     return st.session_state.themes
 
-
-"""
-def generate_one_liner(client, theme):
-    prompt = f"Generate a simple one-liner prompt suitable for a children's connect-the-dots image. The image is to be only a single object in a simple, black and white line art style. The single object is based on the theme: {theme}"
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}]
-    )
-    return response.choices[0].message.content.strip()
-"""
-
-
 def generate_image(client, prompt: str) -> str:
     """
     Generates an image using the DALL-E model based on the given prompt.
@@ -214,8 +202,6 @@ def main():
             f"You've chosen to generate {num_images} images. Please note that generating more images will increase your API usage and costs.")
 
         if st.button("Generate Images", key="generate_button"):
-            #one_liner_theme_prompt = generate_one_liner(
-            #    client, st.session_state.selected_theme)
             st.write(
                 f"Creating images based on '{st.session_state.selected_theme}'")
 
